@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{var t=localStorage.getItem('studio_theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2000department — Vintage &amp; Designer Vintage</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="announce">Free shipping over €150 · One-of-a-kind pieces, limited stock</div>
+
+<header class="site">
+  <div class="wrap site-nav">
+    <button id="mobileToggle" class="mobile-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav-left">
+      <div class="nav-item">
+        <a href="shop.html">Shop</a>
+        <div class="mega-panel">
+          <div class="wrap mega-cols">
+            <div class="mega-col">
+              <h5>Outerwear</h5>
+              <a href="shop.html?category=Outerwear">All Outerwear</a>
+              <a href="shop.html?category=Outerwear">Fur Jackets</a>
+              <a href="shop.html?category=Outerwear">Vests</a>
+              <a href="shop.html?category=Outerwear">Blazer &amp; Suits</a>
+              <a href="shop.html?category=Outerwear">Coats</a>
+              <a href="shop.html?category=Outerwear">Light Jackets</a>
+              <a href="shop.html?category=Outerwear">Leather Jackets</a>
+              <a href="shop.html?category=Outerwear">Bombers</a>
+              <a href="shop.html?category=Outerwear">Denim Jackets</a>
+            </div>
+            <div class="mega-col">
+              <h5>Bottoms</h5>
+              <a href="shop.html?category=Bottoms">All Bottoms</a>
+              <a href="shop.html?category=Bottoms">Jeans &amp; Pants</a>
+              <a href="shop.html?category=Bottoms">Shorts</a>
+              <a href="shop.html?category=Skirts">Skirts</a>
+            </div>
+            <div class="mega-col">
+              <h5>Tops</h5>
+              <a href="shop.html?category=Tops">All Tops</a>
+              <a href="shop.html?category=Tops">T-Shirts</a>
+              <a href="shop.html?category=Tops">Sweaters &amp; Hoodies</a>
+              <a href="shop.html?category=Tops">Shirts &amp; Polos</a>
+              <a href="shop.html?category=Dresses">Dresses</a>
+            </div>
+            <div class="mega-col">
+              <h5>Footwear</h5>
+              <a href="shop.html?category=Footwear">All Footwear</a>
+              <a href="shop.html?category=Footwear">Shoes</a>
+              <a href="shop.html?category=Footwear">Sneakers</a>
+              <a href="shop.html?category=Footwear">Boots</a>
+              <a href="shop.html?category=Footwear">Heels</a>
+              <a href="shop.html?category=Footwear">Sandals</a>
+            </div>
+            <div class="mega-col">
+              <h5>Accessories</h5>
+              <a href="shop.html?category=Accessories">All Accessories</a>
+              <a href="shop.html?category=Accessories">Bags</a>
+              <a href="shop.html?category=Accessories">Belts</a>
+              <a href="shop.html?category=Accessories">Gloves &amp; Scarves</a>
+              <a href="shop.html?category=Accessories">Hats &amp; Beanies</a>
+              <a href="shop.html?category=Accessories">Jewelry</a>
+              <a href="shop.html?category=Accessories">Glasses</a>
+            </div>
+            <div class="mega-col">
+              <h5>Collaborations</h5>
+              <span class="mega-soon">Coming soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="designers.html">Designers</a>
+      <a href="#about">About</a>
+    </nav>
+    <a href="index.html" class="wordmark">2000department.</a>
+    <div class="nav-right">
+      <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button data-cart-open class="cart-btn" aria-label="Open bag">Bag <span class="cart-count" hidden>0</span></button>
+    </div>
+  </div>
+</header>
+
+<div id="mobileNav">
+  <button class="close-mobile" data-cart-close aria-label="Close menu">✕</button>
+  <a href="shop.html">Shop all</a>
+  <a href="designers.html">Designers</a>
+  <a href="#about">About</a>
+</div>
+
+<section class="hero" style="padding-block:0;">
+  <div class="hero-inner wrap" style="padding-block:80px;">
+    <p class="eyebrow">Vintage &amp; designer vintage · curated pieces</p>
+    <h1>2000department.</h1>
+    <p class="sub">A curated archive of vintage and designer vintage clothing. Every piece, a single unit — once it's gone, it's gone.</p>
+    <a href="shop.html" class="btn">Shop now</a>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-head">
+    <h2>New Arrivals</h2>
+    <a href="shop.html" class="view-all">View all</a>
+  </div>
+  <div class="grid" id="newArrivals"></div>
+</section>
+
+<section class="wrap">
+  <div class="section-head">
+    <h2>Categories</h2>
+  </div>
+  <div class="tiles" id="categoryTiles"></div>
+</section>
+
+<section class="wrap about-section" id="about">
+  <div class="section-head">
+    <h2>About</h2>
+  </div>
+  <div class="about-copy">
+    <p>We believe that style is more than what you wear.<br>It is a way of expressing who you are, where you come from and where you want to go.</p>
+    <p>Our brand was created with the idea of bringing together carefully selected pieces, distinctive aesthetics and a strong sense of identity. We look for garments that stand out, pieces with character and designs that can become part of your own story.</p>
+    <p>We are inspired by street culture, contemporary fashion and the people who choose to create their own path rather than follow the obvious one.</p>
+    <p class="about-emphasis">No rules. No unnecessary noise.</p>
+    <p class="about-emphasis">Just pieces with personality.</p>
+    <p class="about-tagline">Wear what feels like you.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-news">
+        <h3>Don't miss what's new</h3>
+        <p>Email alerts when new stock lands. No spam.</p>
+        <form class="news-form" id="newsForm">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">Notify me</button>
+        </form>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="shop.html">Shop all</a>
+          <a href="designers.html">Designers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <a href="#about">About</a>
+          <a href="#" id="footerContact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> 2000department. Every piece is vintage and one of a kind.</span>
+      <span>Payments coming soon</span>
+    </div>
+    <div class="footer-wordmark">2000department.</div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside id="cartDrawer" aria-label="Shopping bag">
+  <div class="cart-head">
+    <h2>Bag</h2>
+    <button data-cart-close aria-label="Close bag">✕</button>
+  </div>
+  <div class="ship-progress" id="shipProgress">
+    <span class="ship-text"></span>
+    <div class="bar"><div></div></div>
+  </div>
+  <div class="cart-lines" id="cartLines"></div>
+  <div class="cart-foot" id="cartFoot" hidden>
+    <div class="cart-total-row"><span>Estimated total</span><span id="cartTotal"></span></div>
+    <p class="cart-note">Taxes included. Shipping calculated at checkout.</p>
+    <button class="btn dark block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<div id="checkoutModal">
+  <div class="modal-card">
+    <h3>Payment coming soon</h3>
+    <p>We're still connecting the payment gateway. In the meantime, email us at <b id="checkoutContactLine"></b> with your bag and we'll help you complete the order by hand.</p>
+    <button class="btn dark block" id="checkoutModalClose">Got it</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('newsForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  showToast("Thanks! We'll email you about new arrivals.");
+  this.reset();
+});
+document.getElementById('footerContact').addEventListener('click', function(e){
+  e.preventDefault();
+  openCheckoutModal();
+});
+
+(function(){
+  const products = PRODUCTS;
+  const inStock = products.filter(p=>p.status==='in_stock');
+
+  const arrivals = inStock.slice(0,6);
+  document.getElementById('newArrivals').innerHTML = arrivals.map(productCardHTML).join('');
+
+  const categories = [...new Set(products.map(p=>p.category))];
+  const tilesEl = document.getElementById('categoryTiles');
+  tilesEl.innerHTML = categories.map(cat=>{
+    const rep = products.find(p=>p.category===cat);
+    return `<a class="tile" href="shop.html?category=${encodeURIComponent(cat)}">
+      <img src="${rep.image}" alt="${cat}">
+      <span>${cat}</span>
+    </a>`;
+  }).join('');
+})();
+</script>
+</body>
+</html>

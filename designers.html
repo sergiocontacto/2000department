@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{var t=localStorage.getItem('studio_theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Designers — 2000department</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="announce">Free shipping over €150 · One-of-a-kind pieces, limited stock</div>
+
+<header class="site">
+  <div class="wrap site-nav">
+    <button id="mobileToggle" class="mobile-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav-left">
+      <div class="nav-item">
+        <a href="shop.html">Shop</a>
+        <div class="mega-panel">
+          <div class="wrap mega-cols">
+            <div class="mega-col">
+              <h5>Outerwear</h5>
+              <a href="shop.html?category=Outerwear">All Outerwear</a>
+              <a href="shop.html?category=Outerwear">Fur Jackets</a>
+              <a href="shop.html?category=Outerwear">Vests</a>
+              <a href="shop.html?category=Outerwear">Blazer &amp; Suits</a>
+              <a href="shop.html?category=Outerwear">Coats</a>
+              <a href="shop.html?category=Outerwear">Light Jackets</a>
+              <a href="shop.html?category=Outerwear">Leather Jackets</a>
+              <a href="shop.html?category=Outerwear">Bombers</a>
+              <a href="shop.html?category=Outerwear">Denim Jackets</a>
+            </div>
+            <div class="mega-col">
+              <h5>Bottoms</h5>
+              <a href="shop.html?category=Bottoms">All Bottoms</a>
+              <a href="shop.html?category=Bottoms">Jeans &amp; Pants</a>
+              <a href="shop.html?category=Bottoms">Shorts</a>
+              <a href="shop.html?category=Skirts">Skirts</a>
+            </div>
+            <div class="mega-col">
+              <h5>Tops</h5>
+              <a href="shop.html?category=Tops">All Tops</a>
+              <a href="shop.html?category=Tops">T-Shirts</a>
+              <a href="shop.html?category=Tops">Sweaters &amp; Hoodies</a>
+              <a href="shop.html?category=Tops">Shirts &amp; Polos</a>
+              <a href="shop.html?category=Dresses">Dresses</a>
+            </div>
+            <div class="mega-col">
+              <h5>Footwear</h5>
+              <a href="shop.html?category=Footwear">All Footwear</a>
+              <a href="shop.html?category=Footwear">Shoes</a>
+              <a href="shop.html?category=Footwear">Sneakers</a>
+              <a href="shop.html?category=Footwear">Boots</a>
+              <a href="shop.html?category=Footwear">Heels</a>
+              <a href="shop.html?category=Footwear">Sandals</a>
+            </div>
+            <div class="mega-col">
+              <h5>Accessories</h5>
+              <a href="shop.html?category=Accessories">All Accessories</a>
+              <a href="shop.html?category=Accessories">Bags</a>
+              <a href="shop.html?category=Accessories">Belts</a>
+              <a href="shop.html?category=Accessories">Gloves &amp; Scarves</a>
+              <a href="shop.html?category=Accessories">Hats &amp; Beanies</a>
+              <a href="shop.html?category=Accessories">Jewelry</a>
+              <a href="shop.html?category=Accessories">Glasses</a>
+            </div>
+            <div class="mega-col">
+              <h5>Collaborations</h5>
+              <span class="mega-soon">Coming soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="designers.html">Designers</a>
+      <a href="index.html#about">About</a>
+    </nav>
+    <a href="index.html" class="wordmark">2000department.</a>
+    <div class="nav-right">
+      <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button data-cart-open class="cart-btn" aria-label="Open bag">Bag <span class="cart-count" hidden>0</span></button>
+    </div>
+  </div>
+</header>
+
+<div id="mobileNav">
+  <button class="close-mobile" data-cart-close aria-label="Close menu">✕</button>
+  <a href="shop.html">Shop all</a>
+  <a href="designers.html">Designers</a>
+  <a href="index.html#about">About</a>
+</div>
+
+<section class="wrap" style="padding-block:36px 0;">
+  <h1 style="font-family:'Inter',sans-serif; font-weight:800; text-transform:uppercase; font-size:clamp(28px,5vw,46px); margin:0 0 6px;">Designers.</h1>
+  <p style="color:var(--ink-muted); font-size:13px; margin:0 0 8px;">Every label currently in the archive.</p>
+</section>
+
+<section class="wrap designers-list" id="designersList"></section>
+
+<footer class="site" style="margin-top:20px;">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-news">
+        <h3>Don't miss what's new</h3>
+        <p>Email alerts when new stock lands. No spam.</p>
+        <form class="news-form" id="newsForm">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">Notify me</button>
+        </form>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="shop.html">Shop all</a>
+          <a href="designers.html">Designers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <a href="index.html#about">About</a>
+          <a href="#" id="footerContact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> 2000department. Every piece is vintage and one of a kind.</span>
+      <span>Payments coming soon</span>
+    </div>
+    <div class="footer-wordmark">2000department.</div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside id="cartDrawer" aria-label="Shopping bag">
+  <div class="cart-head">
+    <h2>Bag</h2>
+    <button data-cart-close aria-label="Close bag">✕</button>
+  </div>
+  <div class="ship-progress" id="shipProgress">
+    <span class="ship-text"></span>
+    <div class="bar"><div></div></div>
+  </div>
+  <div class="cart-lines" id="cartLines"></div>
+  <div class="cart-foot" id="cartFoot" hidden>
+    <div class="cart-total-row"><span>Estimated total</span><span id="cartTotal"></span></div>
+    <p class="cart-note">Taxes included. Shipping calculated at checkout.</p>
+    <button class="btn dark block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<div id="checkoutModal">
+  <div class="modal-card">
+    <h3>Payment coming soon</h3>
+    <p>We're still connecting the payment gateway. In the meantime, email us at <b id="checkoutContactLine"></b> with your bag and we'll help you complete the order by hand.</p>
+    <button class="btn dark block" id="checkoutModalClose">Got it</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('newsForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  showToast("Thanks! We'll email you about new arrivals.");
+  this.reset();
+});
+document.getElementById('footerContact').addEventListener('click', function(e){
+  e.preventDefault();
+  openCheckoutModal();
+});
+
+(function(){
+  const brands = [...new Set(PRODUCTS.map(p => p.brand))].sort();
+  document.getElementById('designersList').innerHTML = brands.map(b => `
+    <a class="designer-row" href="shop.html?brand=${encodeURIComponent(b)}">
+      <span>${b}</span>
+      <span class="arrow">→</span>
+    </a>
+  `).join('');
+})();
+</script>
+</body>
+</html>

@@ -170,10 +170,15 @@ header.site{
 /* ---------- hero ---------- */
 .hero{
   position:relative;
-  background:var(--ink);
+  background:var(--ink) url('../img/hero-banner.jpg') center/cover no-repeat;
   color:var(--bg);
   padding-block:80px;
   overflow:hidden;
+}
+.hero::before{
+  content:'';
+  position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.55));
 }
 .hero-inner{position:relative; text-align:center;}
 .hero .eyebrow{
